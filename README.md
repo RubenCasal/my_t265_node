@@ -3,11 +3,10 @@
 ## Overview
 This ROS2 package provides an interface for the **Intel RealSense T265** tracking camera using the **RealSense SDK (librealsense2)**. The node publishes IMU, odometry, and fisheye images while broadcasting TF transformations for easy visualization and integration into robotic applications.
 
-## Features
+## ROS2 TOPICS
 - **Odometry publishing** (`/rs_t265/odom`): Provides camera position and orientation.
 - **IMU data publishing** (`/rs_t265/imu`): Publishes accelerometer and gyroscope readings.
-- **Fisheye camera streams** (`/rs_t265/fisheye_left`, `/rs_t265/fisheye_right`): Provides grayscale images.
-- **TF broadcasting** (`odom → t265_frame`): Enables real-time visualization in RViz2.
+- **Fisheye camera streams** (`/rs_t265/fisheye_left`, `/rs_t265/fisheye_right`): Provides grayscale fisheye format images.
 
 ## Installation & Setup
 
@@ -60,7 +59,5 @@ rviz2
 - Set **Fixed Frame** to `odom`.
 - Add **TF, Odometry, and Image** displays.
 
-## Maintainer
-**Ruben Casal**  
-📧 e.ruben.casal@gmail.com
+
 
