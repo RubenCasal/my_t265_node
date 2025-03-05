@@ -11,11 +11,7 @@ This ROS2 package provides an interface for the **Intel RealSense T265** trackin
 ## Installation & Setup
 
 ### **1. Install Librealsense2**
-Ensure you have the **Librealsense2 library** compatible with your system:
-
-```bash
-sudo apt install librealsense2-dev
-```
+Ensure you have the **Librealsense2 library** compatible with your system
 
 ### **2. Clone and Build the Package**
 ```bash
